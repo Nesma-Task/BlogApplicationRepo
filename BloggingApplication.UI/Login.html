@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html ng-app="root">
+<head>
+
+
+    <script src="Scripts/jquery-3.4.1.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/file-upload/ng-file-upload-shim.min.js"></script>
+    <script src="Scripts/file-upload/ng-file-upload.min.js"></script>
+    <script src="Scripts/angular-messages.js"></script>
+    <script src="app/components/components.module.js"></script>
+    <script src="app/root.module.js"></script>
+    <script src="app/components/login/login.controller.js"></script>
+    <meta charset="utf-8" />
+    <link href="css/login.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+    <div class="login-wrap" ng-controller="LoginController">
+        <div class="login-html">
+            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"></label>
+            <form class="login-form" ng-submit="loginIn()" >
+                <div class="sign-in-htm">
+                    <div class="group">
+                        <label for="user" class="label">Username</label>
+                        <input id="user" type="text" class="input" ng-model="user.userName" placeholder="UserName" required>
+                    </div>
+                    <div class="group">
+                        <label for="pass" class="label">Password</label>
+                        <input id="pass" type="password" class="input" data-type="password" ng-model="user.password" required placeholder="Password">
+                    </div>
+                   
+                    <div class="group">
+                        <input type="submit" class="button" value="Sign In">
+                    </div>
+                    <div class="hr"></div>
+                    <div class="foot-lnk">
+                       
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    <!--<div class="row" ng-controller="LoginController">
+        <div id="formContent">-->
+            <!-- Tabs Titles -->
+            <!--<h2 class="active"> Sign In </h2>-->
+
+
+            <!-- Login Form -->
+            <!--<form ng-submit="loginIn()">
+                <input class="fadeIn second" id="userName" name="userName" type="text" ng-model="user.userName" placeholder="UserName" required />
+                <input class="fadeIn second" id="password" name="password" type="password" ng-model="user.password" required placeholder="Password" />
+                <input type="submit" class="fadeIn fourth" value="Log In">
+            </form>
+
+            <div id="formFooter">
+
+            </div>
+
+
+        </div>
+    </div>-->
+    <!--<div class="row" ng-controller="LoginController">
+        <div class="account-pages pt-5 my-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-6 col-xl-5">
+                        <div class="account-card-box">
+                            <div class="card mb-0">
+                                <div class="card-body p-4">
+
+                                    <div class="text-center">
+                                        <div class="my-3">
+                                            <a href="index.html">
+
+                                            </a>
+                                        </div>
+                                        <h5 class="text-muted text-uppercase py-3 font-16">Sign In</h5>
+                                    </div>
+
+                                    <form class="mt-2" ng-submit="loginIn()">
+
+                                        <div class="form-group mb-3">
+
+                                            <input id="userName" name="username" type="text" ng-model="user.userName" required />
+                                            <span class="form-bar"></span>
+                                        </div>
+
+                                        <div class="form-group mb-3">
+                                            <input id="password" name="password" type="password" ng-model="user.password" required />
+                                            <span class="form-bar"></span>
+                                        </div>
+
+
+                                        <div class="text-warning text-center" style="font-weight:bold;margin-top: 10px;" id="errorBlock">
+
+                                        </div>
+                                        <div class="form-group text-center">
+                                            <button class="btn btn-success btn-block waves-effect waves-light" type="submit"> Log In </button>
+                                        </div>
+
+
+
+                                    </form>
+
+
+
+                                </div>-->
+    <!-- end card-body -->
+    <!--</div>-->
+    <!-- end card -->
+    <!--</div>
+
+
+    </div>-->
+    <!-- end col -->
+    <!--</div>-->
+    <!-- end row -->
+    <!--</div>-->
+    <!-- end container -->
+    <!--</div>
+    </div>-->
+</body>
+</html>

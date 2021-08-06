@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+
+<div class="row">
+    <div class="account-pages pt-5 my-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6 col-xl-5">
+                    <div class="account-card-box">
+                        <div class="card mb-0">
+                            <div class="card-body p-4">
+
+                                <div class="text-center">
+                                    <div class="my-3">
+                                        <a href="index.html">
+                                            
+                                        </a>
+                                    </div>
+                                    <h5 class="text-muted text-uppercase py-3 font-16">Sign In</h5>
+                                </div>
+
+                                <form action="#" class="mt-2">
+
+                                    <div class="form-group mb-3">
+
+                                       <input id="userName" name="username"  type="text"/>
+                                        <span class="form-bar"></span>
+                                    </div>
+
+                                    <div class="form-group mb-3">
+                                        <input id="password" name="password" type="text" />
+                                        <span class="form-bar"></span>
+                                    </div>
+
+                                    
+                                    <div class="text-warning text-center" style="font-weight:bold;margin-top: 10px;" id="errorBlock">
+                                        @if (ViewBag.Error != "")
+                                        {
+                                            <label> <span class="text-danger font-14">@ViewBag.Error</span></label>
+                                        }
+                                    </div>
+                                    <div class="form-group text-center">
+                                        <button class="btn btn-success btn-block waves-effect waves-light" type="submit"> Log In </button>
+                                    </div>
+
+                                  
+
+                                </form>
+
+
+
+                            </div> <!-- end card-body -->
+                        </div>
+                        <!-- end card -->
+                    </div>
+
+                 
+                </div> <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+</div>
